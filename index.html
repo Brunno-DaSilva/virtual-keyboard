@@ -1,150 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Virtual Keyboard 🚀</title>
 
-  <title>Virtual Keyboard🚀</title>
+    <!--Main Style -->
+    <link rel="stylesheet" href="main.css" />
 
-  <!--Main Style -->
-  <link rel="stylesheet" href="main.css" />
+    <!--FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <!--FontAwesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
-</head>
-
-<body>
-  <header>
-    <div class="navbar">
-      <div class="navbar-items">
-        <div> <img
-            src="https://res.cloudinary.com/duprwuo4j/image/upload/c_scale,w_155/v1574831158/imgs_starwars/imgs/BLOGO_k36v5y.png"
-            alt="logo" />
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-items">
+          <div>
+            <img
+              src="https://res.cloudinary.com/duprwuo4j/image/upload/c_scale,w_155/v1574831158/imgs_starwars/imgs/BLOGO_k36v5y.png"
+              alt="logo"
+            />
+          </div>
+          <div><a href="index.html">Home</a></div>
+          <div><a href="/about/about.html">About</a></div>
+          <div><a href="/contact/contact.html">Contact</a></div>
         </div>
-        <div><a href="index.html">Home</a></div>
-        <div><a href="/about/about.html">About</a></div>
-        <div><a href="/contact/contact.html">Contact</a></div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="text-holder">
+        <input id="text-area" type="text" />
+      </div>
+      <div class="keyboard">
+        <div id="row-one" class="row">
+          <div data-key="192" class="key">`</div>
+          <div data-key="49" class="key">1</div>
+          <div data-key="50" class="key">2</div>
+          <div data-key="51" class="key">3</div>
+          <div data-key="52" class="key">4</div>
+          <div data-key="53" class="key">5</div>
+          <div data-key="54" class="key">6</div>
+          <div data-key="55" class="key">7</div>
+          <div data-key="56" class="key">8</div>
+          <div data-key="57" class="key">9</div>
+          <div data-key="58" class="key">0</div>
+          <div data-key="59" class="key">-</div>
+          <div data-key="187" class="key">=</div>
+          <div data-key="46" class="key wider">delete</div>
+        </div>
+        <div id="row-two" class="row">
+          <div data-nonprintable data-key="9" class="key wide">tab</div>
+          <div data-key="81" class="key">Q</div>
+          <div data-key="87" class="key">W</div>
+          <div data-key="69" class="key">E</div>
+          <div data-key="82" class="key">R</div>
+          <div data-key="84" class="key">T</div>
+          <div data-key="89" class="key">Y</div>
+          <div data-key="85" class="key">U</div>
+          <div data-key="73" class="key">I</div>
+          <div data-key="79" class="key">O</div>
+          <div data-key="80" class="key">P</div>
+          <div data-key="219" class="key">[</div>
+          <div data-key="221" class="key">]</div>
+          <div data-key="220" class="key large">\</div>
+        </div>
+        <div id="row-three" class="row">
+          <div data-key="65" class="key wide">
+            Caps lock
+          </div>
+          <div data-key="65" class="key">
+            A
+          </div>
+          <div data-key="83" class="key">
+            S
+          </div>
+          <div data-key="68" class="key">
+            D
+          </div>
+          <div data-key="70" class="key">
+            F
+          </div>
+          <div data-key="71" class="key">
+            G
+          </div>
+          <div data-key="72" class="key">
+            H
+          </div>
+          <div data-key="74" class="key">
+            J
+          </div>
+          <div data-key="75" class="key">
+            K
+          </div>
+          <div data-key="76" class="key">
+            L
+          </div>
+          <div data-key="186" class="key">: <br />;</div>
+          <div data-key="222" class="key">'</div>
+          <div data-nonprintable data-key="13" class="key wider">return</div>
+        </div>
+
+        <div id="row-four" class="row">
+          <div data-key="16" class="key widest">shift</div>
+          <div data-key="90" class="key">Z</div>
+          <div data-key="88" class="key">X</div>
+          <div data-key="67" class="key">C</div>
+          <div data-key="86" class="key">V</div>
+          <div data-key="66" class="key">B</div>
+          <div data-key="78" class="key">N</div>
+          <div data-key="77" class="key">M</div>
+          <div data-key="188" class="key">,</div>
+          <div data-key="190" class="key">.</div>
+          <div data-key="191" class="key">/</div>
+          <div data-key="16" class="key widest">shift</div>
+        </div>
+
+        <div id="row-five" class="row">
+          <div class="key thin">fn</div>
+          <div data-key="17" class="key">ctrl</div>
+          <div data-key="91" class="key">alt</div>
+          <div data-key="18" class="key wide">&#8984;</div>
+          <div data-key="32" data-automap class="key space">&nbsp;</div>
+          <div data-key="18" class="key wide">&#8984;</div>
+          <div data-key="93" class="key">alt</div>
+          <div data-key="17" class="lang-key key">ctrl</div>
+        </div>
+
+        <!--End of Container Div-->
       </div>
     </div>
-
-  </header>
-
-
-  <div class="container">
-
-    <div class="text-holder"></div>
-    <div class="keyboard">
-      <div id="row-one" class="row">
-        <div data-key="192" class="key">`</div>
-        <div data-key="49" class="key">1</div>
-        <div data-key="50" class="key">2</div>
-        <div data-key="51" class="key">3</div>
-        <div data-key="52" class="key">4</div>
-        <div data-key="53" class="key">5</div>
-        <div data-key="54" class="key">6</div>
-        <div data-key="55" class="key">7</div>
-        <div data-key="56" class="key">8</div>
-        <div data-key="57" class="key">9</div>
-        <div data-key="58" class="key">0</div>
-        <div data-key="59" class="key">-</div>
-        <div data-key="187" class="key">=</div>
-        <div data-key="46" class="key wider">delete</div>
-      </div>
-      <div id="row-two" class="row">
-        <div data-nonprintable data-key="9" class="key wide">tab</div>
-        <div data-key="81" class="key">Q</div>
-        <div data-key="87" class="key">W</div>
-        <div data-key="69" class="key">E</div>
-        <div data-key="82" class="key">R</div>
-        <div data-key="84" class="key">T</div>
-        <div data-key="89" class="key">Y</div>
-        <div data-key="85" class="key">U</div>
-        <div data-key="73" class="key">I</div>
-        <div data-key="79" class="key">O</div>
-        <div data-key="80" class="key">P</div>
-        <div data-key="219" class="key">[</div>
-        <div data-key="221" class="key">]</div>
-        <div data-key="220" class="key large">\</div>
-      </div>
-      <div id="row-three" class="row">
-        <div data-key="65" class="key wide">
-          <kbd>Caps lock</kbd>
-        </div>
-        <div data-key="65" class="key">
-          <kbd>A</kbd>
-        </div>
-        <div data-key="83" class="key">
-          <kbd>S</kbd>
-        </div>
-        <div data-key="68" class="key">
-          <kbd>D</kbd>
-        </div>
-        <div data-key="70" class="key">
-          <kbd>F</kbd>
-        </div>
-        <div data-key="71" class="key">
-          <kbd>G</kbd>
-        </div>
-        <div data-key="72" class="key">
-          <kbd>H</kbd>
-        </div>
-        <div data-key="74" class="key">
-          <kbd>J</kbd>
-        </div>
-        <div data-key="75" class="key">
-          <kbd>K</kbd>
-        </div>
-        <div data-key="76" class="key">
-          <kbd>L</kbd>
-        </div>
-        <div data-key="186" class="key">:
-          <br />;</div>
-        <div data-key="222" class="key">'</div>
-        <div data-nonprintable data-key='13' class="key wider">return</div>
-      </div>
-
-      <div id="row-four" class="row">
-        <div data-key="16" class="key widest">shift</div>
-        <div data-key="90" class="key">Z</div>
-        <div data-key="88" class="key">X</div>
-        <div data-key="67" class="key">C</div>
-        <div data-key="86" class="key">V</div>
-        <div data-key="66" class="key">B</div>
-        <div data-key="78" class="key">N</div>
-        <div data-key="77" class="key">M</div>
-        <div data-key="188" class="key">,</div>
-        <div data-key="190" class="key">.</div>
-        <div data-key="191" class="key">/</div>
-        <div data-key="16" class="key widest">shift</div>
-      </div>
-
-      <div id="row-five" class="row">
-        <div class="key thin">fn</div>
-        <div data-key="17" class="key">ctrl</div>
-        <div data-key="91" class="key">&#x2325;</div>
-        <div data-key="18" class="key wide">&#8984;</div>
-        <div data-key="32" data-automap class="key space">&nbsp;</div>
-        <div data-key="18" class="key wide">&#8984;</div>
-        <div data-key="93" class="key">&#x2325;</div>
-        <div data-key="17" class="lang-key key">ctrl</div>
-      </div>
-
-      <!--End of Container Div-->
-    </div>
-
     <footer>
       <img
         src="https://res.cloudinary.com/duprwuo4j/image/upload/c_scale,w_155/v1574831158/imgs_starwars/imgs/BLOGO_k36v5y.png"
-        alt="logo" />
+        alt="logo"
+      />
       <p>&copy 2020 Bruno DaSilva<span> Front-End Developer</span></p>
       <div class="info-Bruno">
         <p>More Projects</p>
-        <a href="https://github.com/DaSilvaBrunoTexas" target="_blank"><i class="fab fa-github-alt"></i></a>
+        <a href="https://github.com/DaSilvaBrunoTexas" target="_blank"
+          ><i class="fab fa-github-alt"></i
+        ></a>
 
-        <a href="https://www.linkedin.com/in/bruno-dasilva/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/bruno-dasilva/" target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
 
         <a href="http://bruno-dasilva.com/" target="_blank">
           <i class="fas fa-globe-americas"></i>
@@ -153,6 +161,5 @@
     </footer>
 
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
